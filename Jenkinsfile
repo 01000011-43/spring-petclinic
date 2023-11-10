@@ -10,7 +10,9 @@ node {
 
   stage('Run JAR') {
     steps {
-      sh 'java -jar /path/to/spring-petclinic-3.1.0-SNAPSHOT.jar --port=8888'
+      // Replace '/path/to/spring-petclinic-3.1.0-SNAPSHOT.jar' with the actual path
+      // to your JAR file in the Jenkins workspace
+      sh 'java -jar target/spring-petclinic-3.1.0-SNAPSHOT.jar --port=8888'
     }
   }
   
